@@ -1,0 +1,32 @@
+.div1, .div2, .div3, .div4, .div5 {
+    width: 50px;
+    height: 50px;
+}
+
+.div1 {
+    position: fixed;
+    background-color: red;
+    top: 0;
+    left: 0;
+}
+
+.div2 {
+    position: fixed;
+    background-color: gold;
+    top: 0;
+    right: 0;
+}
+
+.div3 {
+    position: fixed;
+    background-color: green;
+    bottom: 0;
+    left: 0;
+}
+
+.div4 {
+    position: fixed;
+    background-color: blue;
+    bottom: 0;
+    right: 0;
+}

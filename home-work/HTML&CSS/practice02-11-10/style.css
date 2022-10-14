@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 0;
+}
+ /*OTHER CLASS*/
+.bg-clr-org {
+    background-color: #e64a19;
+}
+
+.pos-abs-ds-none-ta-left {
+    position: absolute;
+    display: none;
+    text-align: left;
+}
+
+/*HEADER*/
+.nav-list {
+    text-align: center;
+}
+
+.list-item {
+    display: inline-block;
+    position: relative;
+    padding: 20px;
+}
+
+.list-item:hover, .sub-sub-list-item:hover, .sub-sub-sub-list-item:hover, .sub-list-item:hover {
+    background-color: #8a2d0f;
+}
+
+.link {
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+
+.sub-nav-list {
+    top: 69.9px;
+    right: 0;
+}
+
+.sub-list-item, .sub-sub-list-item, .sub-sub-sub-list-item {
+    padding: 20px 40px 20px 15px;
+    list-style: none;
+    width: 260px;
+}
+
+.sub-list-item a, .sub-sub-list-item a, .sub-other-nav-list a {
+    padding: 20px 0;
+    font-size: 28px;
+}
+
+.sub-tutorial-nav-list, .sub-other-nav-list {
+    left: 260px;
+    top: 136px;
+}
+
+.list-item:hover .sub-nav-list, .sub-sub-list-item:hover .sub-other-nav-list, .sub-list-item:hover .sub-tutorial-nav-list {
+    display: block;
+}

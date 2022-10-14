@@ -1,0 +1,283 @@
+@font-face {
+    font-family: "KyivType";
+    src: url("../fonts/KyivTypeSans-VarGX.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+body {
+    font-family: "KyivType", sans-serif;
+    background-image: url(../images/pattern.png), linear-gradient(to right, black, #1d1d1d);
+    background-size: 100%;
+    min-width: 320px;
+    color: #fff;
+    padding-left: 13rem;
+    user-select: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/*HEADER CONTENT (START)*/
+
+.profile {
+    background-color: black;
+    padding-bottom: 15px;
+}
+
+.my-logo {
+    margin: 15px auto;
+    width: auto;
+    background-image: url(../images/pattern.png), linear-gradient(to right, #08fdd8, #18d26e);
+    padding: 5px;
+}
+
+.profile h1 {
+    text-align: center;
+}
+
+.container-header {
+    width: 200px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.5);
+    padding: 5px;
+}
+
+.my-logo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.link-site {
+    color: #909096;
+    padding-top: 20px;
+}
+
+.icons {
+    padding-left: 45%;
+    color: #909096;
+}
+
+.link-site svg {
+    width: 25px;
+}
+
+.link-site li a:hover {
+    color: #08fdd8;
+}
+
+.nav-menu {
+    width: 100%;
+    align-items: center;
+    border-top: 1px solid #282828;
+}
+
+.nav-menu a {
+    text-align: center;
+    width: 100%;
+    display: block;
+    color: #909096;
+    line-height: 5rem;
+    border-bottom: 1px solid #282828;
+    transition: color 0.3s, background-color 0.3s;
+    text-transform: uppercase;
+}
+
+.nav-menu a:hover {
+    color: #08fdd8;
+}
+
+/*ABOUT CONTENT (START)*/
+
+.container {
+    background: rgba(0, 0, 0, 0.4);
+    margin-left: 20px;
+    padding: 30px;
+}
+
+.section-title h2 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #aaaaaa;
+}
+
+.section-title h2::after {
+    content: "";
+    width: 60px;
+    height: 1px;
+    display: inline-block;
+    background: #18d26e;
+    margin: 10px 10px;
+}
+
+.section-title p {
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #18d26e;
+    margin: 20px 0 20px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.img-btn {
+    text-align: center;
+}
+
+.content {
+    padding-left: 20px;
+}
+
+.content h3 {
+    font-weight: 700;
+    font-size: 26px;
+    color: #18d26e;
+}
+
+.fst-italic {
+    font-style: italic;
+    font-weight: 100;
+    margin: 20px 0;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+strong {
+    color: #18d26e;
+}
+
+.column-about {
+    width: 50%;
+}
+
+.content ul {
+    list-style: none;
+}
+
+.content ul li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.content ul li:last-child {
+    margin-bottom: 0;
+}
+
+.content ul i {
+    font-size: 16px;
+    margin-right: 5px;
+    color: #18d26e;
+    line-height: 0;
+}
+
+.content ul li span {
+    font-weight: 100;
+    margin-left: 5px;
+}
+
+.bi::before {
+    content: "/>";
+}
+
+/*SKILL CONTENT (START)*/
+.skills-content {
+    gap: 20px;
+}
+
+.progress-bar-wrap {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.progress-bar {
+    height: 10px;
+    background-color: #18d26e;
+}
+
+.skill {
+    padding: 10px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    color: #fff;
+}
+
+.val {
+    float: right;
+    font-style: normal;
+}
+
+.columt-skill {
+    width: 50%;
+}
+
+/*CONTACT CONTAINER (START)*/
+.fl-rg {
+    float: right;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form input[type="text"], .contact-form input[type="email"] {
+    width: 100%;
+    border: 0;
+    background: #2b2b2b;
+    height: 50px;
+    color: #8d8d8d;
+    padding: 0 20px;
+    margin-top: 10px;
+    outline: none;
+}
+
+.contact-form textarea {
+    width: 100%;
+    border: 0;
+    background: #2b2b2b;
+    height: 50px;
+    color: #8d8d8d;
+    padding: 20px;
+    min-height: 150px;
+    margin-top: 10px;
+    outline: none;
+    resize: none;
+}
+
+.flat-button {
+    color: #909096;
+    letter-spacing: 4px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 220px;
+    height: 50px;
+    border: 1px solid #909096;
+    background-color: rgba(0, 0, 0, 0.2);;
+    text-transform: uppercase;
+}
+
+.flat-button:hover {
+    color: #18d26e;
+    border-color: #18d26e;
+}

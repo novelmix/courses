@@ -1,0 +1,18 @@
+https://www.youtube.com/shorts/746mfQalS48
+touch fileA fileF file23
+rm file[!F]
+
+touch index.js index.html style.css script.js
+rm *.js
+
+touch 123file file123 file123file 123_test
+rm !(123_test)
+
+touch FileA Aim2 Hunter5 file2 Index
+rm *[A-Z]*
+
+touch index_2_index index123 index123index index123_index index
+rm *[0-9]*
+
+touch 1index 55index index1 index_index
+rm *[a-z]

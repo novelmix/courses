@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "LuxuriousScript-Regular";
+    src: url("./fonts/LuxuriousScript-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+p {
+    font-size: 32px;
+    color: blue;
+    line-height: 1.2;
+    position: relative;
+}
+
+p::first-letter {
+    font-family: "LuxuriousScript-Regular", sans-serif;
+    font-size: 100px;
+}
+p::first-line {
+    background-color: #a66aec;
+}
+p:before {
+    position: absolute;
+    content: "\FF02";
+    font-size: 40px;
+    top: 32px;
+    left: -15px;
+    display: inline-block;
+}
+
+p:after {
+    position: absolute;
+    content: "\FF02";
+    display: inline-block;
+    font-size: 40px;
+}

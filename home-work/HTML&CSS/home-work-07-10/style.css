@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: space-around;
+}
+
+/*TABLE*/
+table, td {
+    text-align: center;
+    width: 400px;
+    height: 40px;
+    font-size: 18px;
+    margin: 10px auto;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.bg-slategray {
+    background-color: slategray;
+}
+
+.fw-bolt {
+    font-weight: bold;
+}
+
+/*COLOR DIV*/
+div {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+}
+
+div:nth-child(even) {
+    background-color: red;
+}
+
+div:nth-child(odd) {
+    background-color: green;
+}
+
+div:nth-child(3n+1) {
+    background-color: blue;
+}
+
+/*!*the second option could be done*!*/
+
+/*div:nth-child(even):not(div:nth-child(3n+1)) {*/
+/*    background-color: red;*/
+/*}*/
+
+/*div:nth-child(odd):not(div:nth-child(3n+1)) {*/
+/*    background-color: green;*/
+/*}*/
+
+/*div:nth-child(3n+1) {*/
+/*    background-color: blue;*/
+/*}*/
