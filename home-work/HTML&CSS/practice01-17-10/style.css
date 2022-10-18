@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    /*10px*/
+    font-size: 62.5%;
+}
+h1 {
+    font-size: 3rem;
+}
+h3 {
+    font-size: 2rem;
+}
+
+.container {
+    width: 45rem;
+    margin: 0 auto;
+    background: #777;
+    padding: 2.5rem 0.625rem;
+    border-radius: 0.25rem;
+}
+
+.form-group {
+    margin: 0 auto 1.25rem auto;
+}
+
+.form-group label:first-child{
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    margin: 1rem auto;
+    font-size: 1.6rem;
+}
+
+input, select {
+    padding: 1rem;
+}
+
+label:not(label[for="code"], .chechbox, .radio )::after {
+    content: "* :";
+}
+
+.chechbox input{
+    margin-right: 0.5rem;
+}
+
+.radio input{
+    margin-right: 0.5rem;
+}
+

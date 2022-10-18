@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+<section>
+    <div class="container">
+        <h1>Travel reservation form</h1>
+        <h3>* denotes mandotory</h3>
+        <form id="form" action="">
+            <div class="form-group">
+                <label for="full-name">Full name</label>
+                <input id="full-name" type="text" name="full-name" placeholder="Andrew S" autofocus="autofocus"
+                       required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input id="email" type="email" name="email" placeholder="me@example.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="package">Select Tour Package</label>
+                <select id="package" name="package" required>
+                    <option value="">Please choose one option:</option>
+                    <option value="goa">Goa</option>
+                    <option value="test1">test1</option>
+                    <option value="test2">test2</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Arrival date</label>
+                <input id="date" type="date" name="date" placeholder="m/d/y" required>
+            </div>
+            <div class="form-group">
+                <label for="number">Number of persons</label>
+                <input id="number" type="number" name="persons" required min="0">
+            </div>
+            <div class="form-group">
+                <label>What would you want to avail?</label>
+                <label class="chechbox"><input type="checkbox" name="avail[]" value="boarding">Boarding</label>
+                <label class="chechbox"><input type="checkbox" name="avail[]" value="fooding">Fooding</label>
+                <label class="chechbox"><input type="checkbox" name="avail[]" value="sightseeing">Sight seeing</label>
+            </div>
+            <div class="form-group">
+                <label for="code">Discount Coupon code</label>
+                <input id="code" type="text" name="code">
+            </div>
+            <div class="form-group">
+                <label>Terms and conditions</label>
+                <label class="radio"><input type="radio" name="tnc" value="yes" checked>I agree</label>
+                <label class="radio"><input type="radio" name="tnc" value="no">I disagree</label>
+            </div>
+            <button type="submit" class="btn" name="submit">Complete reservation</button>
+        </form>
+    </div>
+</section>
+</body>
+</html>
