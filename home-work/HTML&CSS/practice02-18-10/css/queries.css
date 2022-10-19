@@ -1,0 +1,14 @@
+@media (max-width: 1200px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    .card {
+        margin: 0 10rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .card {
+        margin: 0;
+    }
+}

@@ -3,3 +3,88 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    max-width: 150rem;
+    margin: 2rem auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+}
+
+.card {
+    border-radius: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+.card::before{
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    top: 27%;
+    left: 103%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    padding-bottom: 60%;
+    background-color: rgba(253, 242, 233, 0.45);
+}
+
+.card::after {
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    top: 107%;
+    left: 86%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    padding-bottom: 60%;
+    background-color: rgba(253, 242, 233, 0.45);
+}
+.step-card-one {
+    background: linear-gradient(90deg, rgba(251,157,63,1) 0%, rgba(252,70,107,1) 61%);
+}
+
+.step-card-two {
+    background: linear-gradient(90deg, rgba(63,212,251,1) 0%, rgba(70,83,252,1) 64%);
+}
+
+.step-card-three {
+    background: linear-gradient(90deg, rgba(63,225,251,1) 0%, rgba(252,70,178,1) 56%);
+}
+.step-card {
+    max-width: 35rem;
+    margin: 5rem auto;
+}
+
+.header-primary{
+    display: flex;
+    justify-content: space-between;
+}
+.header-primary h3 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #eee;
+}
+
+.text-primary p {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #eee;
+    margin: 2rem 0 2rem 0;
+}
+.text-primary p:last-child {
+    margin: 4rem 0 4rem 0;
+}
+.icon {
+    width: 2rem;
+    height: 2rem;
+    color: #eee;
+    font-weight: 900;
+}
